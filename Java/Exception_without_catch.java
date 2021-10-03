@@ -1,3 +1,4 @@
+
 public class Main {
     static int a;
     static void show()
@@ -5,6 +6,10 @@ public class Main {
         try {
             System.out.println(1/a);
             System.out.println(1/0);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
         }
         //finally, block is continued with try without try there's no finally.
         // finally, block will execute whether exception will be thrown or not
